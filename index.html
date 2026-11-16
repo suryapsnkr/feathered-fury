@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Angry Birds - 2D Physics Slingshot Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23ef4444'/><circle cx='40' cy='45' r='12' fill='%23fff'/><circle cx='60' cy='45' r='12' fill='%23fff'/><circle cx='44' cy='45' r='5' fill='%23000'/><circle cx='64' cy='45' r='5' fill='%23000'/><polygon points='50,55 75,65 50,75' fill='%23f59e0b'/></svg>">
+</head>
+<body>
+  <div id="game-container"></div>
+
+  <div class="keyboard-hints">
+    <span>Click & Drag</span> Slingshot &bull; <span>Click/Space</span> Mid-Flight Power &bull; <span>[R]</span> Restart &bull; <span>[P]</span> Pause &bull; <span>[M]</span> Mute &bull; <span>[ESC]</span> Levels
+  </div>
+
+  <!-- Phaser 3 Engine (Local file with CDN fallback) -->
+  <script src="phaser.min.js"></script>
+  <script>
+    if (typeof Phaser === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.80.1/phaser.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- Game Modules -->
+  <script src="js/achievements.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/textures.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/uiScenes.js"></script>
+  <script src="js/gameScene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
